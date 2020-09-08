@@ -79,13 +79,15 @@ Se você for aprovado nesta etapa, será convidado para uma entrevista com nosso
     ]
   ```
 
-  - Criar path GET /contas/{id}/transacoes.pdf que irá retonar todas as transações dessa conta com no formato PDF contendo uma tabela simples com os seguintes dados:
+  - Criar path GET /contas/{id}/transacoes.pdf que irá retonar todas as transações dessa conta em um documento no formato PDF contendo uma tabela simples com os seguintes dados:
   
    | CONTA | TRANSAÇÃO | VALOR |
    |-|-|-|
    |3b1b1c0c-5c68-4352-b937-e3c68b6b1b16|Apple Store|199,50|
    |c203b91a-91a4-41d2-8583-86401c0fb1e4|Netflix|27,50|
-
+   
+   
+  Observação: "Lembrando que esse path será chamado inúmeras vezes por dia, por diversos clientes, portanto é necessário se ter muita performance." 
  
   - O que será diferencial:
 
@@ -95,6 +97,7 @@ Se você for aprovado nesta etapa, será convidado para uma entrevista com nosso
     * Teste Unitários;
     * C.I com Circle CI ou Github Actions;
     * Serviço ser multi tenancy;
+    * Layout e design para o PDF gerado;
     ```
     
   - O que vamos avaliar:
