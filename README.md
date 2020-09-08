@@ -7,11 +7,11 @@ Se você for aprovado nesta etapa, será convidado para uma entrevista com nosso
 
 ### Desafio Técnico
   
-  #### Sobre a Conductor
-  Oferecemos soluções em meios de pagamento para empresas de todos os tamanhos e áreas de atuação, tanto no varejo como no setor financeiro. Nossa missão é simplificar e desburocratizar suas trocas financeiras através da tecnologia, com agilidade, foco no cliente, uma visão ampla do negócio e práticas inovadoras.
+#### Sobre a Conductor
+Oferecemos soluções em meios de pagamento para empresas de todos os tamanhos e áreas de atuação, tanto no varejo como no setor financeiro. Nossa missão é simplificar e desburocratizar suas trocas financeiras através da tecnologia, com agilidade, foco no cliente, uma visão ampla do negócio e práticas inovadoras.
 
-  #### Nossos Números
-  Por se tratar de sistemas financeiros, um dos principais desafios é conseguir ter uma alta disponibilidade, resiliência, escalabilidade e confiabilidade. Ou seja, nossos sistemas precisam ser benfeitos o suficiente para atender os seguintes números:
+#### Nossos Números
+Por se tratar de sistemas financeiros, um dos principais desafios é conseguir ter uma alta disponibilidade, resiliência, escalabilidade e confiabilidade. Ou seja, nossos sistemas precisam ser benfeitos o suficiente para atender os seguintes números:
 
   - 85 milhões de cartões emitods
   - 27 milhões de usuários ativos
@@ -21,7 +21,6 @@ Se você for aprovado nesta etapa, será convidado para uma entrevista com nosso
   - 50% de crescimento médio desde 2012
 
   Complexo, não? Pois é, para conseguirmos atingir esses números com excelência, precisamos de um time robusto, por isso a necessidade de aplicar tal teste. Vamos ao que interessa...
-
 
   #### O Desafio
 
@@ -111,10 +110,9 @@ Se você for aprovado nesta etapa, será convidado para uma entrevista com nosso
     * Diferenciais;    
     ```
 
-
 ### Instruções
 
-      1. Faça o fork do desafio e torne o repositório privado.
-      2. Desenvolva. Você terá até 7 (sete) dias a partir da data do envio do desafio; 
-      3. Após concluir seu trabalho faça um push; 
-      5. Responda ao e-mail enviado do desafio, adicionando cópia para: cc2e73ef.Conductor.onmicrosoft.com@amer.teams.ms notificando a finalização do desafio para validação.
+   1. Faça o fork do desafio e torne o repositório privado.
+   2. Desenvolva. Você terá até 7 (sete) dias a partir da data do envio do desafio; 
+   3. Após concluir seu trabalho faça um push; 
+   5. Responda ao e-mail enviado do desafio, adicionando cópia para: cc2e73ef.Conductor.onmicrosoft.com@amer.teams.ms notificando a finalização do desafio para validação.
