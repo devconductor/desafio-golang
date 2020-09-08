@@ -11,7 +11,7 @@ Se você for aprovado nesta etapa, será convidado para uma entrevista com nosso
   Oferecemos soluções em meios de pagamento para empresas de todos os tamanhos e áreas de atuação, tanto no varejo como no setor financeiro. Nossa missão é simplificar e desburocratizar suas trocas financeiras através da tecnologia, com agilidade, foco no cliente, uma visão ampla do negócio e práticas inovadoras.
 
   #### Nossos Números
-  Por se tratar de sistemas financeiros, um dos principais desafios é conseguir ter uma alta disponibilidade, resiliência, escalabilidade e confiabilidade. Ou seja, nossos sistemas precisam ser befeitos o suficientes para atender os seguintes números:
+  Por se tratar de sistemas financeiros, um dos principais desafios é conseguir ter uma alta disponibilidade, resiliência, escalabilidade e confiabilidade. Ou seja, nossos sistemas precisam ser benfeitos o suficiente para atender os seguintes números:
 
   - 85 milhões de cartões emitods
   - 27 milhões de usuários ativos
@@ -25,7 +25,7 @@ Se você for aprovado nesta etapa, será convidado para uma entrevista com nosso
 
   #### O Desafio
 
-  Nossos clientes são em sua maioria bancos, fintechs e varejistas, muitos ofertão para usuários, além de cartõs de créditos, contas digitais, pagamentos de contas, transferências, recarga de celular e etc. 
+  Nossos clientes são em sua maioria bancos, fintechs e varejistas, muitos ofertão para seus usuários, além de cartõs de créditos, contas digitais, pagamentos de contas, transferências, recarga de celular e etc. 
 
   Para esse desafio iremos focar no nosso produto de emissão de cartão de crédito, esse por sua vez precisa de vários serviços, um deles é uma API que permite que os nossos clientes consumão para saber todas as transações de um determinado usuário e também de uma outra API para baixar o PDF contendo a fatura do cartão.
 
