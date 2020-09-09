@@ -2,7 +2,7 @@
 Olá, queremos convidá-lo a participar de nosso desafio de seleção.  Pronto para participar? Seu trabalho será visto por nosso time e você receberá ao final um feedback sobre o que achamos do seu trabalho. Não é legal?
 
 ### Sobre a oportunidade 
-Temos vagas com diversos níveis, Júnior, Pleno, Senior e Especialista, para cada um deles utilizaremos critérios específicos considerando esse aspecto, combinado? 
+Temos vagas com diversos níveis, Júnior, Pleno, Senior e Especialista, para cada um deles utilizaremos critérios específicos considerando seu nível, combinado? 
 Se você for aprovado nesta etapa, será convidado para uma entrevista com nosso time de especialistas.
 
 ### Desafio Técnico
@@ -13,22 +13,22 @@ Oferecemos soluções em meios de pagamento para empresas de todos os tamanhos e
 #### Nossos Números
 Por se tratar de sistemas financeiros, um dos principais desafios é conseguir ter uma alta disponibilidade, resiliência, escalabilidade e confiabilidade. Ou seja, nossos sistemas precisam ser benfeitos o suficiente para atender os seguintes números:
 
-  - 85 milhões de cartões emitods
-  - 27 milhões de usuários ativos
-  - 1.2 bilhões de transações por ano
-  - R$ 100 bilhões processados anualmente. 
-  - Mais de 520 mil PDVs e TEFs conectados aos nossos sistemas.
-  - 50% de crescimento médio desde 2012
+  - 85 milhões de cartões emitidos;
+  - 27 milhões de usuários ativos;
+  - 1.2 bilhões de transações por ano;
+  - R$ 100 bilhões processados anualmente;
+  - Mais de 520 mil PDVs e TEFs conectados aos nossos sistemas;
+  - 50% de crescimento médio desde 2012.
 
   Complexo, não? Pois é, para conseguirmos atingir esses números com excelência, precisamos de um time robusto, por isso a necessidade de aplicar tal teste. Vamos ao que interessa...
 
   #### O Desafio
 
-  Nossos clientes são em sua maioria bancos, fintechs e varejistas, muitos ofertão para seus usuários, além de cartõs de créditos, contas digitais, pagamentos de contas, transferências, recarga de celular e etc. 
+  Nossos clientes são em sua maioria bancos, fintechs e varejistas, muitos ofertam para seus usuários, além de cartões de crédito, contas digitais, pagamentos de contas, transferências, recarga de celular e etc. 
 
-  Para esse desafio iremos focar no nosso produto de emissão de cartão de crédito, esse por sua vez precisa de vários serviços, um deles é uma API que permite que os nossos clientes consumão para saber todas as transações de um determinado usuário e também de uma outra API para baixar o PDF contendo a fatura do cartão.
+  Para esse desafio iremos focar no nosso produto de emissão de cartão de crédito, esse por sua vez precisa de vários serviços, um deles é uma API que permite que os nossos clientes consumam para saber todas as transações de um determinado usuário e também de uma outra API para baixar um PDF contendo a fatura do cartão.
 
-  Portanto, o desafio será a construção de uma API que permita a consulta de todas as transações de uma determinada conta, depois ter um outro serviço que retorne um PDF simples contendo uma tabela com as transações de uma terminada conta.
+  Portanto, o desafio será a construção de uma API que permita a consulta de todas as transações de uma determinada conta, depois ter um outro serviço que retorne um PDF simples contendo uma tabela com as transações de uma determinada conta.
 
   Segue no detalhe todas as características do desafio...
 
@@ -36,7 +36,7 @@ Por se tratar de sistemas financeiros, um dos principais desafios é conseguir t
 
   - Criar uma API REST em golang com o seguinte context Path: /conductor/v1/api/
   - Todos os end-points deverão ser documentados com Swagger/Open API.
-  - Utilizar o banco de dados H2 ou SQL Lite para persistência dos dados em memória, assim facilitará a execução dos projetos durante as correções.
+  - Utilizar o banco de dados H2 ou SQLite para persistência dos dados em memória, assim facilitará a execução dos projetos durante as correções.
   - Ao subir o projeto, preencher o banco com algum dado fake para testes.
   - Criar o path GET /contas que irá retornar todas as contas com o seguinte body:
   ```json
@@ -86,14 +86,14 @@ Por se tratar de sistemas financeiros, um dos principais desafios é conseguir t
    |c203b91a-91a4-41d2-8583-86401c0fb1e4|Netflix|27,50|
    
    
-  Observação: "Lembrando que esse path será chamado inúmeras vezes por dia, por diversos clientes, portanto é necessário se ter muita performance." 
+  Observação: esse path será chamado inúmeras vezes por dia, por diversos clientes, portanto é necessário se ter muita performance. 
  
   - O que será diferencial:
 
     ```
     * GRpc;
-    * Criação de Dockefile;
-    * Teste Unitários;
+    * Criação de Dockerfile;
+    * Testes Unitários;
     * C.I com Circle CI ou Github Actions;
     * Serviço ser multi tenancy;
     * Layout e design para o PDF gerado;
