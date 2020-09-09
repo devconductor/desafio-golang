@@ -112,7 +112,7 @@ Por se tratar de sistemas financeiros, um dos principais desafios é conseguir t
 
 ### Instruções
 
-   1. Faça o fork do desafio e torne o repositório privado.
+   1. Faça um fork deste repositório, torne ele privado, desenvolva a sua solução e comite dentro desse seu repositório.
    2. Desenvolva. Você terá até 7 (sete) dias a partir da data do envio do desafio; 
-   3. Após concluir seu trabalho faça um push; 
+   3. Após concluir seu trabalho faça um push e adicione o usuário @devconductor ao seu repositório para que possamos ter permissão ao código.
    5. Responda ao e-mail enviado do desafio, adicionando cópia para: cc2e73ef.Conductor.onmicrosoft.com@amer.teams.ms notificando a finalização do desafio para validação.
