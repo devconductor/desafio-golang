@@ -38,7 +38,7 @@ Por se tratar de sistemas financeiros, um dos principais desafios é conseguir t
 
   - Crie uma API REST Full em golang com todos os CRUDS com o context path(/conductor/v1/api) e as seguintes tabelas: 
   
-  ```json
+  ```
     Table Account{
       id int [pk, increment]
       status varchar
@@ -70,7 +70,7 @@ Por se tratar de sistemas financeiros, um dos principais desafios é conseguir t
     Ref: Transactions.id_card > Cards.id      
   ```
   
-  ![diagrama](/imgs/diagrama.png)
+  ![diagrama](https://github.com/devconductor/desafio-golang/raw/master/img/diagrama.png)
     
   - Todos os end-points deverão ser documentados com Swagger/Open API.
   - Utilizar o banco de dados H2 ou SQLite para persistência dos dados em memória, assim facilitará a execução dos projetos durante as correções.
@@ -98,10 +98,9 @@ Por se tratar de sistemas financeiros, um dos principais desafios é conseguir t
     ```
     * Seu código; 
     * Arquitetura e camadas da sua aplicação;
-    * Possibilidade de escalabilidade da funcionalidade;
+    * Documentação do projeto e seu README.md
     * Organização do código;
     * Boas práticas;
-    * Diferenciais;    
     ```
 
 ### Instruções
