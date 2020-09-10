@@ -27,67 +27,61 @@ Por se tratar de sistemas financeiros, um dos principais desafios é conseguir t
   Nossos clientes são em sua maioria bancos, fintechs e varejistas, muitos ofertam para seus usuários, além de cartões de crédito, contas digitais, pagamentos de contas, transferências, recarga de celular e etc. 
 
   Para esse desafio iremos focar no nosso produto de emissão de cartão de crédito, esse por sua vez precisa de vários serviços, um deles é uma API que permite que os nossos clientes consumam para saber todas as transações de um determinado usuário e também de uma outra API para baixar um PDF contendo a fatura do cartão.
+  
+  A problemática é que quando você possuí mais de 27 milhões de usuários, a performance e escalabilidade desses serviços precisam ser muito alta, principalmente a geração de faturas em PDF, essa por sua vez necessita de muitas informações e consome um certo processamento para gerar o arquivo.
 
   Portanto, o desafio será a construção de uma API que permita a consulta de todas as transações de uma determinada conta, depois ter um outro serviço que retorne um PDF simples contendo uma tabela com as transações de uma determinada conta.
 
-  Segue no detalhe todas as características do desafio...
-
+  Segue no detalhe todas as características para o desafio...
+  
   #### Premissas
 
-  - Criar uma API REST em golang com o seguinte context Path: /conductor/v1/api/
+  - Crie uma API REST Full em golang com todos os CRUDS com o context path(/conductor/v1/api) e as seguintes tabelas: 
+  
+  ```json
+    Table Account{
+      id int [pk, increment]
+      status varchar
+      created_at datetime
+      updated_at datetime
+      deleted_at datetime
+    }
+
+    Table Transactions{
+      id int [pk, increment]
+      valor numeric
+      id_card int
+      created_at datetime
+      updated_at datetime
+      deleted_at datetime  
+    }
+
+
+    Table Cards{
+      id int [pk, increment]
+      amount numeric
+      id_account int
+      created_at datetime
+      updated_at datetime
+      deleted_at datetime  
+    }
+
+    Ref: Cards.id_account > Account.id
+    Ref: Transactions.id_card > Cards.id      
+  ```
+  
+  ![diagrama](/imgs/diagrama.png)
+    
   - Todos os end-points deverão ser documentados com Swagger/Open API.
   - Utilizar o banco de dados H2 ou SQLite para persistência dos dados em memória, assim facilitará a execução dos projetos durante as correções.
   - Ao subir o projeto, preencher o banco com algum dado fake para testes.
-  - Criar o path GET /contas que irá retornar todas as contas com o seguinte body:
-  ```json
-  [
-    {
-      "id": "3b1b1c0c-5c68-4352-b937-e3c68b6b1b16",
-      "status": "ATIVA"
-    },
-    {
-      "id": "3b1b1c0c-5c68-4352-b937-e3c68b6b1b16",
-      "status": "INATIVA"
-    }    
-  ]
-  ```
-
-  - Criar path GET /contas/{id} que irá retonar uma determinada conta com o seguinte body:
-  ```json  
-    {
-      "id": "3b1b1c0c-5c68-4352-b937-e3c68b6b1b16",
-      "status": "ATIVA"
-    }
-  ```
-
-  - Criar path GET /contas/{id}/transacoes que irá retonar todas as transações dessa conta com o seguinte body:
-  ```json  
-    [
-      {
-        "id": "3b1b1c0c-5c68-4352-b937-e3c68b6b1b16",
-        "id_conta": "45283ddc-5e40-4a75-94d2-c0894f24c911",
-        "descricao": "Apple Store",
-        "valor": 199.50
-      },
-      {
-        "id": "c203b91a-91a4-41d2-8583-86401c0fb1e4",
-        "id_conta": "10ba5050-c69f-40d3-bbeb-c0172520b222",
-        "descricao": "Netflix",
-        "valor": 27.50
-      }
-    ]
-  ```
-
   - Criar path GET /contas/{id}/transacoes.pdf que irá retonar todas as transações dessa conta em um documento no formato PDF contendo uma tabela simples com os seguintes dados:
   
    | CONTA | TRANSAÇÃO | VALOR |
    |-|-|-|
    |3b1b1c0c-5c68-4352-b937-e3c68b6b1b16|Apple Store|199,50|
    |c203b91a-91a4-41d2-8583-86401c0fb1e4|Netflix|27,50|
-   
-   
-  Observação: esse path será chamado inúmeras vezes por dia, por diversos clientes, portanto é necessário se ter muita performance. 
- 
+  
   - O que será diferencial:
 
     ```
@@ -112,7 +106,13 @@ Por se tratar de sistemas financeiros, um dos principais desafios é conseguir t
 
 ### Instruções
 
-   1. Faça um fork deste repositório, torne ele privado, desenvolva a sua solução e comite dentro desse seu repositório.
+   1. Faça um fork deste repositório, torne ele privado, desenvolva a sua solução e comit dentro desse seu repositório.
    2. Desenvolva. Você terá até 7 (sete) dias a partir da data do envio do desafio; 
-   3. Após concluir seu trabalho faça um push e adicione o usuário @devconductor ao seu repositório para que possamos ter permissão ao código.
+   3. Após concluir o desenvolvimento faça um push e adicione o usuário @devconductor ao seu repositório para que possamos ter permissão ao código.
+   4. Para que possamos testar sua solução, faço o deploy do seu projeto para alguma conta no http://heroku.com
+   5. Informe a URL externa do seu projeto no heroku.
+   6. Informe a URL externa de acesso ao swagger.
    5. Responda ao e-mail enviado do desafio, adicionando cópia para: cc2e73ef.Conductor.onmicrosoft.com@amer.teams.ms notificando a finalização do desafio para validação.
+
+
+Boa Sorte!!!!
