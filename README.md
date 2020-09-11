@@ -105,7 +105,7 @@ Por se tratar de sistemas financeiros, um dos principais desafios é conseguir t
 
 ### Instruções
 
-   1. Faça um fork deste repositório, torne ele privado, desenvolva a sua solução e comit dentro desse seu repositório.
+   1. Duplique esse repositório para um repositório privado, desenvolva a sua solução e commit dentro desse seu repositório.
    2. Desenvolva. Você terá até 7 (sete) dias a partir da data do envio do desafio; 
    3. Após concluir o desenvolvimento faça um push e adicione o usuário @devconductor ao seu repositório para que possamos ter permissão ao código.
    4. Para que possamos testar sua solução, faço o deploy do seu projeto para alguma conta no http://heroku.com
